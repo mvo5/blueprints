@@ -6,7 +6,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/osbuild/images/pkg/customizations/anaconda"
+	"github.com/osbuild/blueprints/pkg/customizations/anaconda"
 )
 
 type Customizations struct {

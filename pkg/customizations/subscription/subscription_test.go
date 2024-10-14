@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/osbuild/images/internal/common"
-	"github.com/osbuild/images/pkg/blueprint"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/osbuild/blueprints/internal/common"
+	"github.com/osbuild/blueprints/pkg/blueprint"
 )
 
 // rhsmConfigNotSamePointers is a helper function to check that the pointers in the

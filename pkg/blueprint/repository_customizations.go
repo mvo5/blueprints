@@ -6,9 +6,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/osbuild/images/internal/common"
-	"github.com/osbuild/images/pkg/customizations/fsnode"
 	"github.com/osbuild/images/pkg/rpmmd"
+
+	"github.com/osbuild/blueprints/internal/common"
+	"github.com/osbuild/blueprints/pkg/customizations/fsnode"
 )
 
 type RepositoryCustomization struct {

@@ -3,8 +3,8 @@ package kickstart
 import (
 	"fmt"
 
-	"github.com/osbuild/images/pkg/blueprint"
-	"github.com/osbuild/images/pkg/customizations/users"
+	"github.com/osbuild/blueprints/pkg/blueprint"
+	"github.com/osbuild/blueprints/pkg/customizations/users"
 )
 
 type File struct {

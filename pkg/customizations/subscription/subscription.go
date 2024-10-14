@@ -1,8 +1,9 @@
 package subscription
 
 import (
-	"github.com/osbuild/images/internal/common"
-	"github.com/osbuild/images/pkg/blueprint"
+	"github.com/osbuild/blueprints/pkg/blueprint"
+
+	"github.com/osbuild/blueprints/internal/common"
 )
 
 // The ImageOptions specify subscription-specific image options

@@ -5,8 +5,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/osbuild/images/pkg/blueprint"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/osbuild/blueprints/pkg/blueprint"
 )
 
 func TestOscapConfigGeneration(t *testing.T) {

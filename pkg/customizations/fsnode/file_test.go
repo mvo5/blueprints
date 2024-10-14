@@ -4,8 +4,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/osbuild/images/internal/common"
 	"github.com/stretchr/testify/assert"
+
+	"github.com/osbuild/blueprints/internal/common"
 )
 
 func TestFileIsDir(t *testing.T) {

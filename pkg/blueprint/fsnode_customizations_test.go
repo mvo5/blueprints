@@ -6,10 +6,13 @@ import (
 	"testing"
 
 	"github.com/BurntSushi/toml"
-	"github.com/osbuild/images/internal/common"
-	"github.com/osbuild/images/pkg/customizations/fsnode"
-	"github.com/osbuild/images/pkg/pathpolicy"
 	"github.com/stretchr/testify/assert"
+
+	// XXX: ?
+	"github.com/osbuild/images/pkg/pathpolicy"
+
+	"github.com/osbuild/blueprints/internal/common"
+	"github.com/osbuild/blueprints/pkg/customizations/fsnode"
 )
 
 func TestDirectoryCustomizationToFsNodeDirectory(t *testing.T) {
