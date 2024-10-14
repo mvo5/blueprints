@@ -2,8 +2,6 @@ package remotefile
 
 import (
 	"context"
-
-	"github.com/osbuild/images/internal/worker/clienterrors"
 )
 
 type resolveResult struct {
@@ -46,13 +44,13 @@ func (r *Resolver) Finish() []Spec {
 		result := <-r.queue
 		r.jobs -= 1
 
-		var resultError *clienterrors.Error
+		var resultError *Error
 		if result.err != nil {
-			resultError = clienterrors.WorkerClientError(
-				clienterrors.ErrorRemoteFileResolution,
+			resultError = &Error{
+				ErrorRemoteFileResolution,
 				result.err.Error(),
 				result.url,
-			)
+			}
 		}
 
 		resultItems = append(resultItems, Spec{
